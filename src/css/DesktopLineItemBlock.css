@@ -1,0 +1,107 @@
+.line-item-container {
+    display: flex;
+    flex-direction: column;
+}
+.line-item-container .header-line-item {
+    background: #EEEBEB;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.line-item-container .row-line-item {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid lightgrey;
+    height: 2vw;
+}
+
+.line-item-container .row-line-item:hover {
+    background: #FBFAFA;
+    cursor: pointer;
+    color: blue;
+    box-shadow: 0px 1px darkgrey;
+}
+
+.line-item-container .from-block {
+    display: flex;
+    justify-content: flex-start;
+    width: 12vw;
+    align-items: center;
+}
+
+.line-item-container .to-block {
+    display: flex;
+    justify-content: space-between;
+    width: 19vw;
+    align-items: center;
+}
+
+.line-item-container .subject-block {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    align-items: center;
+}
+
+.line-item-container .date-time-block {
+    display: flex;
+    justify-content: flex-start;
+    width: 10vw;
+    align-items: center;
+    color: black;
+}
+
+.line-item-container .line-item-text-row {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.line-item-container .line-item-text-row:hover {
+    color: blue;
+}
+
+.line-item-container .to-mails-count {
+    background: grey;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.line-item-container .to-mails-count-text {
+    margin: 5px;
+    font-size: small;
+    color: white;
+}
+
+.line-item-container .attachment-img {
+    width: 15px;
+}
+
+.line-item-container .to-block-text-container {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-item-container .attachment {
+    margin-right: 10px;
+}
+
+.line-item-container .arrow-icon {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.line-item-container .arrow-icon-inverted {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}

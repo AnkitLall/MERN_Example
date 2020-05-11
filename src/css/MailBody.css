@@ -1,0 +1,10 @@
+.mail-body-container {
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+}
+
+.mail-body-container .mail-body-text {
+    margin-left: 70px;
+    margin-right: 50px;
+    white-space: pre-line
+}

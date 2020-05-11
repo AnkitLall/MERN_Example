@@ -1,0 +1,212 @@
+.mobile-line-item-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgrey;
+}
+.mobile-line-item-container .header-line-item {
+    background: #EEEBEB;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+}
+
+.mobile-line-item-container .row-line-item {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.mobile-line-item-container .row-line-item:hover {
+    background: #FBFAFA;
+    cursor: pointer;
+    color: blue;
+    box-shadow: 0px 1px darkgrey;
+}
+
+.mobile-line-item-container .from-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.mobile-line-item-container .from-block-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    border-right: 1px solid;
+}
+
+.mobile-line-item-container .date-attachment-block {
+    display: flex;
+    margin-right: 23px;
+}
+
+.mobile-line-item-container .to-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.mobile-line-item-container .to-block-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    border-right: 1px solid;
+}
+
+.mobile-line-item-container .from-to-block {
+    display: flex;
+}
+
+.mobile-line-item-container .icon-container {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.mobile-line-item-container .text-blocks-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-line-item-container .mail-icon {
+    width: 18px;
+    height: 28px;
+}
+
+.mobile-line-item-container .side-arrow-icon {
+    width: 10px;
+    height: 10px;
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.mobile-line-item-container .subject-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.mobile-line-item-container .subject-block-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    border-right: 1px solid;
+}
+
+.mobile-line-item-container .date-time-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: black;
+    margin-right: 10px;
+}
+
+.mobile-line-item-container .date-time-block-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.mobile-line-item-container .line-item-text-header {
+    margin-right: 1vw;
+}
+
+.mobile-line-item-container .line-item-text-row {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80vw;
+}
+
+.mobile-line-item-container .line-item-subject-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80vw;
+}
+
+.mobile-line-item-container .line-item-date-row {
+    white-space: nowrap;   
+}
+
+.mobile-line-item-container .line-item-text-row:hover {
+    color: blue;
+}
+
+.mobile-line-item-container .to-mails-count {
+    background: grey;
+    border-radius: 2px;
+    margin-right: 35px;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.mobile-line-item-container .to-mails-count-text {
+    margin: 5px;
+    font-size: small;
+    color: white;
+}
+
+.mobile-line-item-container .attachment-img {
+    width: 15px;
+}
+
+.mobile-line-item-container .to-block-text-container {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-line-item-container .attachment {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-line-item-container .arrow-icon {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.mobile-line-item-container .arrow-icon-inverted {
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
