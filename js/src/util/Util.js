@@ -1,21 +1,3 @@
-let data = [
-    {'from': 'aaa@example.com', 'to': ['zzz.zzz@example.com','yyy@example.com','yyy@example.com','yyy@example.com','yyy@example.com','yyy@example.com'], 'subject': '[ HR-888 ] Notice of official announcement', 'date': '2020/6/9', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'bbb.bbbb@example.com', 'to': ['yyy@example.com'], 'subject': '[web:333] "Web Contact"', 'date': '2020/5/9', 'time': '0:10','attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'ccc@example.com', 'to': ['xxx@example.com'], 'subject': 'Happy New Year! Greetings for the New Year', 'date': '2020/5/9', 'time': '0:00', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'ddd.dddd@example.com', 'to': ['vvv.vvv@example.com'], 'subject': '[HR-887(Revised: Office Expansion Project Team)] Notice of office', 'date': '2020/5/5', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'eee@example.com', 'to': ['sss@example.com'], 'subject': '[Github] Logout page', 'date': '2020/5/6', 'time': '0:30', 'attachment': false, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'aaa@example.com', 'to': ['zzz.zzz@example.com'], 'subject': '[ HR-888 ] Notice of official announcement', 'date': '2020/5/8', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'aaa@example.com', 'to': ['zzz.zzz@example.com'], 'subject': '[ HR-888 ] Notice of official announcement', 'date': '2020/6/8', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'aaa@example.com', 'to': ['zzz.zzz@example.com'], 'subject': '[ HR-888 ] Notice of official announcement', 'date': '2020/6/8', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'bbb.bbbb@example.com', 'to': ['yyy@example.com'], 'subject': '[web:333] "Web Contact"', 'date': '2020/5/8', 'time': '0:10','attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'ccc@example.com', 'to': ['xxx@example.com'], 'subject': 'Happy New Year! Greetings for the New Year', 'date': '2020/5/5', 'time': '0:00', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'ddd.dddd@example.com', 'to': ['vvv.vvv@example.com'], 'subject': '[HR-887(Revised: Office Expansion Project Team)] Notice of office', 'date': '2020/5/7', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'eee@example.com', 'to': ['sss@example.com'], 'subject': '[Github] Logout page', 'date': '2020/5/8', 'time': '0:30', 'attachment': false, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'aaa@example.com', 'to': ['zzz.zzz@example.com'], 'subject': '[ HR-888 ] Notice of official announcement', 'date': '2020/5/8', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-    {'from': 'aaa@example.com', 'to': ['zzz.zzz@example.com'], 'subject': '[ HR-888 ] Notice of official announcement', 'date': '2020/5/6', 'time': '0:20', 'attachment': true, 'body': 'Hi xyz,\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},
-
-];
-
 export const getHeaderLineitem = () =>{
     return {
         fromMailIds: 'From',
@@ -111,59 +93,9 @@ export const getDate = (dateObj, format) =>{
     if(format === 'm dd'){
         finalDateObj['dateStr'] =  date.split(' ')[1] + ' ' + finalDateObj.day;
     }else{
-        finalDateObj['dateStr'] = finalDateObj.year + '/' + finalDateObj.month + '/' + finalDateObj.day;
+        finalDateObj['dateStr'] = finalDateObj.year + '-' + finalDateObj.month + '-' + finalDateObj.day;
     }    
     return finalDateObj;
-}
-
-export const getData = (startDate, endDate, isMobile, order) =>{    
-    let filteredData = [];
-    data.forEach((lineItem) =>{
-        let mailInfo = {};
-        let date = new Date(lineItem.date).getTime();
-        let fromDate = new Date(startDate).getTime();
-        let toDate = new Date(endDate).getTime();
-        if(date >= fromDate && date <= toDate){
-            let todayObj = getDate();
-            let today = new Date(todayObj.dateStr).getTime();
-            if(date === today){
-                mailInfo['currentDay'] = true;
-            }
-
-            let currentMonth = new Date(todayObj.dateStr).getMonth();
-            let lineItemMonth = new Date(lineItem.date).getMonth();
-            if(lineItemMonth === currentMonth){
-                mailInfo['currentMonth'] = true;
-                mailInfo['monthDateFormat'] = getDate(new Date(lineItem.date),'m dd');
-            }
-
-            mailInfo['numToMails'] = lineItem.to.length;
-            let mailIds = '';
-            lineItem.to.forEach((mailId,idx) =>{
-                mailIds += mailId;
-                if(lineItem.to[idx+1]){
-                    mailIds += ', ';
-                }
-            });
-
-            mailInfo['toMailIds'] = mailIds;
-            mailInfo['fromMailIds'] = lineItem.from;
-            mailInfo['mailBody'] = lineItem.body;
-            mailInfo['mailSubject'] = lineItem.subject;
-            mailInfo['date'] = lineItem.date;
-            mailInfo['time'] = lineItem.time;
-            mailInfo['attachmentFileExist'] = lineItem.attachment;
-
-            filteredData.push(mailInfo);
-        }        
-    });
-    if(isMobile){
-        filteredData = sortLineItems(filteredData,'fromMailId',order);
-    }else{
-        filteredData = sortByDate(filteredData,order);        
-    }
-    
-    return filteredData;
 }
 
 export const sortLineItems = (lineItems,type,order) =>{

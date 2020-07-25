@@ -3,7 +3,7 @@ import SearchSection from './SearchSection';
 import MailSection from './MailSection';
 import './../css/ScreenView.css';
 import {
-    getDate, getData, sortByDate, sortLineItems
+    getDate, sortByDate, sortLineItems
 } from '../util/Util';
 
 class ScreenView extends Component{
@@ -17,11 +17,29 @@ class ScreenView extends Component{
         };
     };
 
-    componentDidMount(){        
-        let data = getData(this.state.startDate.dateStr,this.state.endDate.dateStr,this.props.isMobile,this.state.sortOrder);
-        this.setState({
-            data
-        });
+    componentDidMount(){
+        fetch(`http://localhost:8080/data/${this.state.startDate.dateStr}/${this.state.endDate.dateStr}`,{
+            method: 'GET',
+            headers:{
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            if(this.props.isMobile){
+                data = sortLineItems(data,'fromMailId',this.state.sortOrder);
+            }else{
+                data = sortByDate(data,this.state.sortOrder);        
+            }
+            this.setState({
+                data
+            });
+        })        
+        // let data = getData(this.state.startDate.dateStr,this.state.endDate.dateStr,this.props.isMobile,this.state.sortOrder);
+        // this.setState({
+        //     data
+        // });
     };
 
     setDateRange = (fromDate,toDate) =>{
@@ -34,10 +52,24 @@ class ScreenView extends Component{
     };
 
     getMail = (fromDate, toDate) => {
-        let data = getData(fromDate,toDate,this.props.isMobile,this.state.sortOrder);
-        this.setState({
-            data
-        });
+        fetch(`http://localhost:8080/data/${fromDate}/${toDate}`,{
+            method: 'GET',
+            headers:{
+                "Content-Type": "application/json"
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            if(this.props.isMobile){
+                data = sortLineItems(data,'fromMailId',this.state.sortOrder);
+            }else{
+                data = sortByDate(data,this.state.sortOrder);        
+            }
+            this.setState({
+                data
+            });
+        }) 
     }
 
     setNewSortOrder = () =>{
