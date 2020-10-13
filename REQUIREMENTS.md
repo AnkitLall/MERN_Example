@@ -1,4 +1,4 @@
-# Mission 1
+# Requirement 1
 
 * Developed the entire mock up design of email archive system with two views - Desktop and mobile. 
 * The entire project is built using React Framework.
@@ -52,7 +52,7 @@
 # Utility file 
 * The purpose of this file is to provide utility functions to the components. Functions used to generate data, sort data, structure data in correct format and is this is also where we have stored our dummy data. These functions can be imported and used from anywhere in the application.
 
-# Mission 2
+# Requirement 2
 
 # MailBody
 * This is the component responsible for displaying the content of any mail. Upon clicking any line item a state variable openMail is set true through a call back which enables rendering of the content block. While the content is visible if the same line item is clicked again the property is set to false and the content block disappears.

@@ -1,6 +1,4 @@
 
-
-
 Following is the list of **Improvements** that can be made in the Mock UI :-
 
 1. Filter/Search :- 
