@@ -1,4 +1,4 @@
-# Hennge_Mockup
+# Email_Archive_UI
 
 Steps to run the project :-
 
