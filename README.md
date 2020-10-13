@@ -1,4 +1,4 @@
-# Email_Archive_UI
+# Email Archive UI
 
 Steps to run the project :-
 
